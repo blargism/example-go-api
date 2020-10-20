@@ -25,7 +25,7 @@ func Conn() *pgx.Conn {
 	var err error
 	conn, err = pgx.Connect(context.Background(), connectionString)
 
-	if os.IsExist(err) {
+	if err != nil {
 		log.Fatalf("Cannot connect to %v/%v", host, database)
 	}
 
