@@ -9,11 +9,19 @@ To run this API you need to do a few things.
 3) Run the data.sql script against the database to create the tables and insert the default records.
 3) Win!
 
-# To compile and run
+# Installation
 
 You need to set up your GOPATH properly, see [https://golang.org/doc/gopath_code.html](https://golang.org/doc/gopath_code.html).
 
 Mostly, this means `$USER/go/src`.
+
+Run this in your go path:
+
+```
+git clone https://github.com/blargism/example-go-api.git baddrivers
+```
+
+Make sure you clone to the `baddrivers` directory instead of just a straight clone. This ensures that all the go package names are correct.
 
 # Environment Variables
 
